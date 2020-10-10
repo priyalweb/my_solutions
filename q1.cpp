@@ -36,5 +36,6 @@ for(int p=0;p<n;p++){
 }
 
 cout<<similarPair(arr,n);
+	
     return 0;
 }
