@@ -13,14 +13,12 @@ long long int similarPair(int arr[], int n){
 		}
 		else if(arr[i]==arr[i+1]){
 			same++;
-//			continuous = 0;
 		}
 		else{
 			if(same>=1 & count>0){
 				count = count + same;
 			}
-			total = total + (count+1)*(count+1-1)/2 ; 
-//			continuous = 0;
+			total = total + (count+1)*(count+1-1)/2 ;   //combination formula nC2 (n= count +1)
 			same =0; count =0;
 		}
 	}
@@ -38,5 +36,6 @@ for(int p=0;p<n;p++){
 }
 
 cout<<similarPair(arr,n);
+	
     return 0;
 }
