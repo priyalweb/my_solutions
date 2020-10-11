@@ -22,6 +22,7 @@ long long int similarPair(int arr[], int n){
 			same =0; count =0;
 		}
 	}
+	
 	return total;
 }
 
